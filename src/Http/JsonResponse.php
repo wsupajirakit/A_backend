@@ -6,7 +6,10 @@ namespace App\Http;
 
 final class JsonResponse
 {
-    /** @param array<string, string> $headers */
+    /**
+     * @param array<string, mixed>  $payload
+     * @param array<string, string> $headers
+     */
     public function __construct(
         public readonly int $status,
         public readonly array $payload,
