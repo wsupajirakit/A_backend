@@ -1,0 +1,5 @@
+# Admin panel (served via Alias /admin). Bootstrap and templates are include-only.
+Options -Indexes
+<FilesMatch "^(bootstrap|header|footer|sidenav|topnav|check_user_session|check_user_insession)\.php$|^__.*\.html$|^loader_dom\.html$">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,71 @@
+{
+  "about": {
+    "app_name": "A Radio",
+    "web_name": "example.com",
+    "organization_name": "A Radio Ltd.",
+    "tax_id": "",
+    "app_title": "A Radio",
+    "logo": "",
+    "logo_white": "",
+    "logo_no_text": "",
+    "logo_no_text_white": ""
+  },
+  "contact": {
+    "address1": "",
+    "address2": "",
+    "subdistrict": "",
+    "district": "",
+    "province": "",
+    "zipcode": "",
+    "full_address": "",
+    "email": ["contact@example.com"],
+    "phone": [],
+    "website": "https://www.example.com"
+  },
+  "social": {
+    "facebook": {
+      "name": "A Radio",
+      "url": "https://www.facebook.com/example/",
+      "key": "facebook"
+    },
+    "youtube": {
+      "name": "A Radio",
+      "url": "https://www.youtube.com/@example",
+      "key": "youtube"
+    },
+    "twitter": {
+      "name": "@example",
+      "url": "https://twitter.com/example",
+      "key": "twitter"
+    },
+    "instagram": {
+      "name": "example",
+      "url": "https://www.instagram.com/example/",
+      "key": "instagram"
+    }
+  },
+  "radio": {
+    "aradio": {
+      "straming_url": "",
+      "frequency": "",
+      "wave": "",
+      "sms_number": ""
+    }
+  },
+  "acknowledgement": {
+    "privacy_policy": {
+      "android": "https://www.example.com/privacy-policy.php?platform=app",
+      "ios": "https://www.example.com/privacy-policy.php?platform=app",
+      "web": "https://www.example.com/privacy-policy.php"
+    },
+    "terms_of_use": {
+      "web": "https://www.example.com/terms-of-use.php"
+    }
+  },
+  "mobile_app": {
+    "download": {
+      "android": "https://play.google.com/store/apps/details?id=com.example.aradio",
+      "ios": ""
+    }
+  }
+}

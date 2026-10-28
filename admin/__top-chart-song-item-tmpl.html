@@ -1,0 +1,18 @@
+<li class="alert alert-light border alert-dismissible fade show song-lb song-{{song_id}} no-action-on-submit" data-song-id="{{song_id}}" style="cursor: move;">
+  <span class="badge badge-primary song-order mr-2"></span>
+  <span>{{song_name}}</span>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="removeSong('{{song_id}}');">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <hr />
+  <div class="form-inline">
+    <div class="form-group align-items-baseline flex-column mr-2">
+      <label class="small">{{_lwo_lb_}}</label>
+      <input type="text" name="last_week_order" class="form-control form-control-sm ipNumeric" aria-describedby="lastWeekOrder" pattern="^[0-9]+" data-song-id="{{song_id}}" value="{{_lwo_}}" maxlength="3" />
+    </div>
+    <div class="form-group align-items-baseline flex-column">
+      <label class="small">{{_ocwn_lb_}}</label>
+      <input type="text" name="on_chart_week_number" class="form-control form-control-sm" aria-describedby="onChartWeekNumber" pattern="[^_]+" data-song-id="{{song_id}}" value="{{_ocwn_}}" maxlength="30" />
+    </div>
+  </div>
+</li>

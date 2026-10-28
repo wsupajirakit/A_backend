@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Runtime data
+storage/*
+!storage/.gitignore
+!storage/README.md
+*.log
+admin/data/user-token/session/*
+admin/data/user-token/reset-password/*
+!admin/data/user-token/**/.gitkeep
+admin/data/db_log/
+
+# Uploaded content (keep the folders)
+public/rsc/**/*
+!public/rsc/**/
+!public/rsc/**/.gitkeep
+!public/rsc/.htaccess
+
+# Tooling
+/vendor/
+.phpunit.cache/
+.php-cs-fixer.cache
+.phpcs-cache
+
+# OS / editors
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/

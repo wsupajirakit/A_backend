@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="A Backend">
+    <description>PSR-12 for the maintained code (legacy admin/public templates are excluded).</description>
+    <file>src</file>
+    <file>tests</file>
+    <file>public/api</file>
+    <file>public/ajax</file>
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+    <rule ref="PSR12">
+        <exclude name="Generic.Files.LineLength.TooLong"/>
+    </rule>
+</ruleset>

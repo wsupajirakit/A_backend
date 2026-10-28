@@ -1,0 +1,35 @@
+<div class="top-chart-container shadow-sm my-5">
+  <table class="top-chart-table table-fixed w-100">
+    <colgroup><col /></colgroup>
+    <thead class="main-gradient-x table-bordered text-whitex">
+      <!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a> -->
+      <tr>
+        <th>
+          <div class="py-2 d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="tc_logo">
+              <figure class="my-0 mr-4" style="width: 70px;">
+                <img src="{{_logo_dir_}}logo/logo-512.png" alt="A Radio" class="d-block w-100" />
+                <!-- <img src="https://example.com/logo/logo-512.png" alt="A Radio" class="d-block w-100" /> -->
+              </figure>
+            </div>
+            <div class="title">
+              <h3 class="mb-2" id="topChartTitle">A RADIO TOP CHART</h3>
+              <h6 class="font-weight-normal mb-0" id="TopChartDate">{{_tc_date_}}</h6>
+            </div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+  </table>
+  <table class="table table-borderlessx top-chart-table tc_result table-fixed w-100">
+    <colgroup><col /><col /><col /><col /><col /></colgroup>
+    <thead class="">
+      <th class="text-center">#</th>
+      <th>เพลง</th>
+      <th>ศิลปิน</th>
+      <th class="text-center">สัปดาห์ที่แล้ว</th>
+      <th class="text-center">ระยะเวลาบนชาร์ต</th>
+    </thead>
+    <thead id="topChartBody">{{_tc_list_}}</thead>
+  </table>
+</div>

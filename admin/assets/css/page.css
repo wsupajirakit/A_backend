@@ -1,0 +1,180 @@
+.pr-form-img-preview{
+	max-width: 150px;
+}
+
+.pr-form-img-preview .select-new-img,
+.pr-select-new-img{
+	top: 6px;
+	right: 6px;
+	position: absolute;
+}
+.square-parent{
+	padding-top: 100%;
+	position: relative;
+}
+
+.square-child{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.media-img-selector{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.media-img-selector input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+
+.media-img-selector input:checked ~ .checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ff6699;
+}
+/*
+@media only screen and (min-width: 768px) {
+  .pr-form-img-preview{
+    max-width: none;
+  }
+}*/
+
+
+
+.imgPreload{
+  background-color: #ccc;
+  background-image: -webkit-linear-gradient(left, #ddd 0%, #eaeaea 45%, #ddd 60%);
+  background-image: -o-linear-gradient(left, #ddd 0%, #eaeaea 45%, #ddd 60%);
+  background-image: linear-gradient(to right, #ddd 0%, #eaeaea 45%, #ddd 60%);
+  background-size: 300%;
+  -o-animation: shine-imgPreload 3s infinite linear;
+  -moz-animation: shine-imgPreload 3s infinite linear;
+  -webkit-animation: shine-imgPreload 3s infinite linear;
+  animation: shine-imgPreload 3s infinite linear;
+  background-position: 400% 0;
+}
+
+.imgPreload img{
+  opacity: 0!important; 
+}
+
+@-o-keyframes shine-imgPreload{
+  100%{background-position: -60% 0; }
+}
+@-moz-keyframes shine-imgPreload{
+  100%{background-position: -60% 0; }
+}
+@-webkit-keyframes shine-imgPreload{
+  100%{background-position: -60% 0; }
+}
+@keyframes shine-imgPreload{
+  100%{background-position: -60% 0; }
+}
+
+/*media masonry*/
+#image-container .ms-item{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+} 
+
+#image-container .ms-inner{
+  border: 1px solid #f1f1f1;
+      min-height: 50px;
+}
+
+#image-container  .ms-btnContainer {
+  top: 10px;
+  right: 10px;
+}
+
+/*radio program*/
+.radio-program-table th,
+.radio-program-table td{
+  height: 40px;
+  vertical-align: middle;
+}
+
+.ui-selectable .marked{
+  background-color: #f5f5f5!important;
+}
+.ui-selectable .ui-selected{
+  background-color: #a6c9e2;
+} 
+.ui-selectable .ui-selecting{
+  background-color: #e5f4ff;
+}
+.ui-selectable .no-select-here.ui-selecting,
+.ui-selectable .marked.ui-selecting{
+  background-color: #f00;
+}
+
+.ui-selectable-helper{
+  position: absolute; 
+  z-index: 100; 
+  border: 1px dotted #333333; 
+}
+
+.rdoProgramPane{
+  border: 1px solid;
+  background-color: rgba(0, 123, 255, 0.5);
+  overflow: hidden;
+}
+
+.rdoProgramPane .rpDisplay{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.rdoProgramPane .rpDisplay .rpImg{
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+  border: 1px solid #ffffff;
+  background-color: #7fbdff;
+}
+
+.rdoProgramPane .rpDisplay .rpName{
+  display: none;
+}
+
+.rpControlMenu{
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.rpControlMenu button{
+  line-height: normal;
+  padding: 1px;
+  min-width: 20px;
+  vertical-align: top;
+}
+/*end radio program*/
+
+@media only screen and (min-width: 576px){
+  #image-container .ms-item{
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #image-container .ms-item{
+    width: 20%;
+  }
+
+  .pr-form-img-preview{
+    max-width: none;
+  }
+}
+/*media masonry*/

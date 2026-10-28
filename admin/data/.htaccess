@@ -1,0 +1,2 @@
+# Data and config files are never served.
+Require all denied

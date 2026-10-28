@@ -1,0 +1,23 @@
+# Web root = public/. Mobile API front controller + basic hardening.
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # /api/v1/... -> api/index.php (the path is read from REQUEST_URI)
+    RewriteRule ^api/v1(/.*)?$ api/index.php [L,QSA]
+</IfModule>
+
+# Never serve templates, dot files or backups directly.
+<FilesMatch "(^\.|^__tmpl_.*\.html$|\.(ini|log|sql|bak|sh)$)">
+    Require all denied
+</FilesMatch>
+<Files "initialize.php">
+    Require all denied
+</Files>
+<Files "header.php">
+    Require all denied
+</Files>
+<Files "footer.php">
+    Require all denied
+</Files>
